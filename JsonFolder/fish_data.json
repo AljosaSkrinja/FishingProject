@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Salmon",
+        "size": "Medium",
+        "color": "Pink"
+    },
+    {
+        "name": "Tuna",
+        "size": "Large",
+        "color": "Blue"
+    },
+    {
+        "name": "Trout",
+        "size": "Small",
+        "color": "Brown"
+    },
+    {
+        "name": "Trout",
+        "size": "Small",
+        "color": "Brown",
+        "eyes": "Gold",
+        "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    }
+] 
