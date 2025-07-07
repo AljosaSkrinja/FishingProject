@@ -1,0 +1,73 @@
+{
+    "canUseBobber": false,
+    "canUseCastingReel": false,
+    "canUseLure": false,
+    "canUseSpinningReel": false,
+    "gameRods": [
+        {
+			"rodName": "Club-Series ProPulse Spod 385",
+			"rodBrand": "UL-Chumber",
+			"rodLevel": 5,
+            "baitcoinsCost": 0,
+            "clubTokensCost": 4670,
+            "creditsCost": 0,
+            "rodLength": 3.85,
+			"castingWeightMin": 125,
+			"castingWeightMax": 285,
+            "rodLineWeightMaximum": 8,
+            "rodLineWeightMinimum": 22
+        },
+		{
+			"rodName": "Power Launcher Spod 375 SE",
+			"rodBrand": "UL-Chumber",
+			"rodLevel": 42,
+            "baitcoinsCost": 400,
+            "clubTokensCost": 0,
+            "creditsCost": 0,
+            "rodLength": 3.75,
+			"castingWeightMin": 110,
+			"castingWeightMax": 240,
+            "rodLineWeightMaximum": 8,
+            "rodLineWeightMinimum": 21
+        },
+		{
+			"rodName": "Power Launcher Spod 365",
+			"rodBrand": "UL-Chumber",
+			"rodLevel": 47,
+            "baitcoinsCost": 0,
+            "clubTokensCost": 0,
+            "creditsCost": 38720,
+            "rodLength": 3.65,
+			"castingWeightMin": 85,
+			"castingWeightMax": 190,
+            "rodLineWeightMaximum": 8,
+            "rodLineWeightMinimum": 20
+        },
+		{
+			"rodName": "Power Launcher Spod 375",
+			"rodBrand": "UL-Chumber",
+			"rodLevel": 48,
+            "baitcoinsCost": 0,
+            "clubTokensCost": 0,
+            "creditsCost": 40500,
+            "rodLength": 3.75,
+			"castingWeightMin": 110,
+			"castingWeightMax": 240,
+            "rodLineWeightMaximum": 8,
+            "rodLineWeightMinimum": 21
+        },
+		{
+			"rodName": "Power Launcher Spod 385",
+			"rodBrand": "UL-Chumber",
+			"rodLevel": 50,
+            "baitcoinsCost": 0,
+            "clubTokensCost": 0,
+            "creditsCost": 46700,
+            "rodLength": 3.85,
+			"castingWeightMin": 125,
+			"castingWeightMax": 285,
+            "rodLineWeightMaximum": 8,
+            "rodLineWeightMinimum": 22
+		}
+	]
+}

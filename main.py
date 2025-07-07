@@ -3,7 +3,7 @@ from config import WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE
 from data_manager import DataManager
 from UI.display_manager import DisplayManager
 from UI.view_manager import ViewManager
-from UI.ui_design import FishingPlanetUI
+from UI.main_ui_orchestrator import MainUIOrchestrator
 
 def main():
     dpg.create_context()
@@ -14,10 +14,9 @@ def main():
     display_manager = DisplayManager(data_manager)
     view_manager = ViewManager(display_manager)
 
-    FishingPlanetUI(data_manager, display_manager, view_manager)
+    MainUIOrchestrator(data_manager, display_manager, view_manager)
     
-    display_manager.display_fish_data()
-    display_manager.display_lakes_data()
+    # Skip fish and lake data - only show rods
     view_manager.show_rods()
 
     dpg.show_viewport()

@@ -1,157 +1,121 @@
-from parser import parse_json, deduplicate_data
-from config import ROD_TYPES, get_json_path, create_category_name
+from parser import parse_json
+from config import *
 
 class DataManager:
     
     def __init__(self):
-        self.fish_data = None
-        self.lakes_data = None
         self.rods_data = {}
         self.rod_categories = {}
-        self.load_all_data()
-    
-    def load_all_data(self):
-        self.load_fish_data()
-        self.load_lakes_data()
+        self.reels_data = {}
+        self.reel_categories = {}
         self.load_rods_data()
-    
-    def load_fish_data(self):
-        self.fish_data = parse_json(get_json_path('fish_data.json'))
-    
-    def load_lakes_data(self):
-        self.lakes_data = parse_json(get_json_path('lake_data.json'))
-    
-    def process_rod_data(self, rod_data, rod_type, capabilities):
-        processed_rods = []
-        category_name = create_category_name(capabilities)
-        
-        for rod in rod_data:
-            processed_rod = dict(rod)
-            
-            processed_rod['rodtype'] = rod_type
-            processed_rod['category'] = category_name
-            
-            price_parts = []
-            
-            if rod.get('baitcoinsCost', 0) > 0:
-                price_parts.append(f"{rod['baitcoinsCost']} BC")
-            
-            if rod.get('clubTokensCost', 0) > 0:
-                price_parts.append(f"{rod['clubTokensCost']} CT")
-            
-            if rod.get('creditsCost', 0) > 0:
-                price_parts.append(f"{rod['creditsCost']} CC")
-            
-            if not price_parts:
-                processed_rod['price'] = "Free"
-            else:
-                processed_rod['price'] = " + ".join(price_parts)
-            
-            self._format_weight_data(processed_rod)
-            
-            for field in ['baitcoinsCost', 'clubTokensCost', 'creditsCost']:
-                processed_rod.pop(field, None)
-            
-            processed_rods.append(processed_rod)
-        
-        return processed_rods
-    
-    def _format_weight_data(self, rod_data):
-        weight_configs = [
-            ('rodLineWeightMinimum', 'rodLineWeightMaximum', 'lineWeight', 'kg'),
-            ('rodLureWeightMinimum', 'rodLureWeightMaximum', 'lureWeight', 'g')
-        ]
-        
-        for min_field, max_field, output_field, unit in weight_configs:
-            if min_field in rod_data and max_field in rod_data:
-                min_weight = rod_data[min_field]
-                max_weight = rod_data[max_field]
-                rod_data[output_field] = f"{min_weight}-{max_weight} {unit}"
-                
-                rod_data.pop(min_field, None)
-                rod_data.pop(max_field, None)
+        self.load_reels_data()
     
     def load_rods_data(self):
         self.rods_data = {}
         self.rod_categories = {}
         
-        for rod_type in ROD_TYPES:
-            rod_data = parse_json(get_json_path(f'{rod_type}.json'))
+        # Load processed rods data
+        processed_rods = parse_json(PROCESSED_RODS_PATH)
+        
+        # Organize data in categories
+        for rod in processed_rods:
+            rod_type = rod['rodtype']
+            category = rod['category']
             
-            capabilities = {
-                'canUseBobber': rod_data.get('canUseBobber', False),
-                'canUseCastingReel': rod_data.get('canUseCastingReel', False),
-                'canUseLure': rod_data.get('canUseLure', False),
-                'canUseSpinningReel': rod_data.get('canUseSpinningReel', False)
-            }
+            if rod_type not in self.rods_data:
+                self.rods_data[rod_type] = []
+            self.rods_data[rod_type].append(rod)
             
-            if 'gameRods' in rod_data:
-                raw_rods = rod_data['gameRods']
-            else:
-                raw_rods = rod_data
-            
-            processed_rods = self.process_rod_data(raw_rods, rod_type, capabilities)
-            self.rods_data[rod_type] = processed_rods
-            
-            category_name = create_category_name(capabilities)
-            if category_name not in self.rod_categories:
-                self.rod_categories[category_name] = []
-            self.rod_categories[category_name].extend(processed_rods)
+            if category not in self.rod_categories:
+                self.rod_categories[category] = []
+            self.rod_categories[category].append(rod)
     
-    def get_fish_data(self):
-        return self.fish_data
-    
-    def get_lakes_data(self):
-        return self.lakes_data
+    def load_reels_data(self):
+        self.reels_data = {}
+        self.reel_categories = {}
+        
+        # Load processed reels data
+        processed_reels = parse_json(PROCESSED_REELS_PATH)
+        
+        # Organize data in categories
+        for reel in processed_reels:
+            reel_type = reel.get('reeltype', 'Unknown')
+            category = reel.get('category', 'Unknown')
+            
+            if reel_type not in self.reels_data:
+                self.reels_data[reel_type] = []
+            self.reels_data[reel_type].append(reel)
+            
+            if category not in self.reel_categories:
+                self.reel_categories[category] = []
+            self.reel_categories[category].append(reel)
     
     def get_rods_by_category(self):
         return self.rod_categories
     
-    def search_fish(self, search_term):
-        return self._search_data(self.fish_data, search_term, 'name')
-    
-    def search_lakes(self, search_term):
-        return self._search_data(self.lakes_data, search_term, 'name')
-    
+    def get_reels_by_category(self):
+        return self.reel_categories
+      
     def search_rods(self, search_term):
         filtered_rods = {}
+        search_term = search_term.lower()
+        
         for rod_type, rods in self.rods_data.items():
-            filtered_rods[rod_type] = self._search_data(rods, search_term)
+            filtered_rods[rod_type] = [
+                rod for rod in rods 
+                if search_term in str(rod).lower()
+            ]
         return filtered_rods
     
-    def _search_data(self, data, search_term, field_name=None):
-        if not data:
-            return []
+    def search_reels(self, search_term):
+        filtered_reels = {}
         search_term = search_term.lower()
-        if field_name:
-            return [item for item in data if search_term in item.get(field_name, '').lower()]
-        else:
-            return [item for item in data if search_term in str(item).lower()]
-    
-    def get_deduplicated_data(self, data):
-        return deduplicate_data(data)
-    
-    def get_display_ready_data(self, data):
-        return self.get_deduplicated_data(data)
+        
+        for reel_type, reels in self.reels_data.items():
+            filtered_reels[reel_type] = [
+                reel for reel in reels 
+                if search_term in str(reel).lower()
+            ]
+        return filtered_reels
     
     def process_search_results(self, search_results):
-        if isinstance(search_results, dict):
-            processed_results = {}
-            for rods in search_results.values():
-                for rod in rods:
-                    category = rod.get('category', 'Unknown')
-                    if category not in processed_results:
-                        processed_results[category] = []
-                    processed_results[category].append(rod)
-            return processed_results
-        else:
+        if not isinstance(search_results, dict):
             return search_results
+            
+        processed_results = {}
+        for rods in search_results.values():
+            for rod in rods:
+                category = rod.get('category', 'Unknown')
+                if category not in processed_results:
+                    processed_results[category] = []
+                processed_results[category].append(rod)
+        return processed_results
+    
+    def process_reel_search_results(self, search_results):
+        if not isinstance(search_results, dict):
+            return search_results
+            
+        processed_results = {}
+        for reels in search_results.values():
+            for reel in reels:
+                category = reel.get('category', 'Unknown')
+                if category not in processed_results:
+                    processed_results[category] = []
+                processed_results[category].append(reel)
+        return processed_results
     
     def get_primary_rod_fields(self):
-        return ['rodName', 'price', 'rodLength', 'rodAction', 'rodLevel', 'lineWeight', 'lureWeight']
+        return PRIMARY_ROD_FIELDS
     
     def get_secondary_rod_fields(self):
-        return ['rodtype', 'rodBrand', 'rodGuides', 'rodPieces', 'rodPower']
+        return SECONDARY_ROD_FIELDS
+    
+    def get_primary_reel_fields(self):
+        return PRIMARY_REEL_FIELDS
+    
+    def get_secondary_reel_fields(self):
+        return SECONDARY_REEL_FIELDS
     
     def format_field_display_name(self, field_name):
         if field_name == 'lineWeight':
@@ -159,7 +123,7 @@ class DataManager:
         elif field_name == 'lureWeight':
             return 'Lure Weight'
         else:
-            return field_name.replace('rod', '').capitalize()
+            return field_name.replace('rod', '').replace('reel', '').capitalize()
     
     def format_field_value(self, field_name, value):
         if isinstance(value, list):
