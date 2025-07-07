@@ -173,7 +173,7 @@ class UIComponents:
                 UIComponents._create_reel_card(item, data_manager)
             else:
                 # Show error for unknown item type
-                dpg.add_text("Error: Unknown item type", color=(255, 0, 0))
+                dpg.add_text("Error: Unknown item type")
                 dpg.add_text(f"Item: {item.get('name', 'Unknown')}")
                 dpg.add_text("Missing 'rodtype' or 'reeltype' field")
     
