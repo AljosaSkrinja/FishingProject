@@ -31,7 +31,7 @@ class MainUIOrchestrator:
         """Setup callback mappings for UI interactions"""
         self.callbacks = {
             'show_rods': self.view_manager.show_rods,
-            'show_reels': self.view_manager.show_reels
+            'show_reels': self.view_manager.show_reels,
         }
     
     def search_callback(self):
@@ -53,4 +53,5 @@ class MainUIOrchestrator:
         UIComponents.recenter_navigation_bar(self.callbacks, self.display_manager)
         UIComponents.recenter_search_bar(self.search_callback, self.on_enter, self.display_manager)
         
-        self.display_manager.refresh_current_view() 
+        self.display_manager.refresh_current_view()
+    

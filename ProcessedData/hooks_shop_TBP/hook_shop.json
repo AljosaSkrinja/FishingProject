@@ -1,0 +1,832 @@
+[
+  {
+    "level": 1,
+    "quantity": 10,
+    "size": "#10",
+    "price": "20 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 1,
+    "quantity": 10,
+    "size": "#8",
+    "price": "20 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 2,
+    "quantity": 10,
+    "size": "#6",
+    "price": "60 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 3,
+    "quantity": 10,
+    "size": "#4",
+    "price": "60 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 3,
+    "quantity": 10,
+    "size": "#2",
+    "price": "60 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 4,
+    "quantity": 10,
+    "size": "#1",
+    "price": "140 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#4/0",
+    "price": "30 CT",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#6/0",
+    "price": "32 CT",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#8/0",
+    "price": "33 CT",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 3,
+    "size": "#12/0",
+    "price": "42 CT",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#10/0",
+    "price": "48 CT",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 7,
+    "quantity": 10,
+    "size": "#1/0",
+    "price": "140 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 10,
+    "quantity": 10,
+    "size": "#2/0",
+    "price": "150 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 12,
+    "quantity": 10,
+    "size": "#12",
+    "price": "30 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 12,
+    "quantity": 10,
+    "size": "#3/0",
+    "price": "150 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 15,
+    "quantity": 10,
+    "size": "#14",
+    "price": "30 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 18,
+    "quantity": 10,
+    "size": "#4/0",
+    "price": "220 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 19,
+    "quantity": 10,
+    "size": "#5/0",
+    "price": "220 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 20,
+    "quantity": 10,
+    "size": "#16",
+    "price": "30 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 20,
+    "quantity": 10,
+    "size": "#6/0",
+    "price": "220 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 30,
+    "quantity": 10,
+    "size": "#7/0",
+    "price": "300 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 31,
+    "quantity": 10,
+    "size": "#8/0",
+    "price": "300 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 32,
+    "quantity": 10,
+    "size": "#9/0",
+    "price": "300 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 33,
+    "quantity": 10,
+    "size": "#10/0",
+    "price": "300 CC",
+    "brand": "RiverTex",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 61,
+    "quantity": 5,
+    "size": "#7/0",
+    "price": "360 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 62,
+    "quantity": 5,
+    "size": "#8/0",
+    "price": "360 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 63,
+    "quantity": 5,
+    "size": "#9/0",
+    "price": "360 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 64,
+    "quantity": 5,
+    "size": "#10/0",
+    "price": "360 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 65,
+    "quantity": 3,
+    "size": "#11/0",
+    "price": "420 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 66,
+    "quantity": 3,
+    "size": "#12/0",
+    "price": "420 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 67,
+    "quantity": 3,
+    "size": "#13/0",
+    "price": "420 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 68,
+    "quantity": 3,
+    "size": "#14/0",
+    "price": "420 CC",
+    "brand": "MagFin",
+    "hooktype": "simple",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#10",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#8",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#6",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#4",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#2",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#1",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#1/0",
+    "price": "1 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#2/0",
+    "price": "35 CT",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#4/0",
+    "price": "37 CC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 14,
+    "quantity": 10,
+    "size": "#2/0",
+    "price": "2 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 14,
+    "quantity": 10,
+    "size": "#3/0",
+    "price": "2 BC",
+    "brand": "MagFin",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 14,
+    "quantity": 10,
+    "size": "#4/0",
+    "price": "2 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 14,
+    "quantity": 10,
+    "size": "#5/0",
+    "price": "2 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 14,
+    "quantity": 10,
+    "size": "#6/0",
+    "price": "2 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 22,
+    "quantity": 10,
+    "size": "#7/0",
+    "price": "3 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 22,
+    "quantity": 10,
+    "size": "#8/0",
+    "price": "3 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 22,
+    "quantity": 10,
+    "size": "#9/0",
+    "price": "3 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 22,
+    "quantity": 10,
+    "size": "#10/0",
+    "price": "3 BC",
+    "brand": "RiverTex",
+    "hooktype": "barbless",
+    "category": "float",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#5/0",
+    "price": "53 CT",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 10,
+    "size": "#7/0",
+    "price": "56 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 34,
+    "quantity": 10,
+    "size": "#2",
+    "price": "330 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 35,
+    "quantity": 10,
+    "size": "#1",
+    "price": "330 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 42,
+    "quantity": 10,
+    "size": "#1/0",
+    "price": "420 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 44,
+    "quantity": 10,
+    "size": "#2/0",
+    "price": "420 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 46,
+    "quantity": 10,
+    "size": "#3/0",
+    "price": "550 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 48,
+    "quantity": 10,
+    "size": "#4/0",
+    "price": "550 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 50,
+    "quantity": 10,
+    "size": "#6/0",
+    "price": "660 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 50,
+    "quantity": 10,
+    "size": "#8/0",
+    "price": "660 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 50,
+    "quantity": 10,
+    "size": "#10/0",
+    "price": "660 CC",
+    "brand": "UL-Chuber",
+    "hooktype": "carp",
+    "category": "carp",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#3/0",
+    "price": "43 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#5/0",
+    "price": "44 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#7/0",
+    "price": "45 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#9/0",
+    "price": "47 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#12/0",
+    "price": "48 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 5,
+    "quantity": 5,
+    "size": "#14/0",
+    "price": "49 CT",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 8,
+    "quantity": 5,
+    "size": "#4",
+    "price": "200 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 8,
+    "quantity": 5,
+    "size": "#2",
+    "price": "235 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 9,
+    "quantity": 5,
+    "size": "#1",
+    "price": "275 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 10,
+    "quantity": 5,
+    "size": "#1/0",
+    "price": "290 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 12,
+    "quantity": 5,
+    "size": "#2/0",
+    "price": "300 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 15,
+    "quantity": 5,
+    "size": "#3/0",
+    "price": "330 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 20,
+    "quantity": 5,
+    "size": "#4/0",
+    "price": "420 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 25,
+    "quantity": 5,
+    "size": "#5/0",
+    "price": "440 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 30,
+    "quantity": 5,
+    "size": "#6/0",
+    "price": "475 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 35,
+    "quantity": 5,
+    "size": "#8/0",
+    "price": "595 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 71,
+    "quantity": 5,
+    "size": "#9/0",
+    "price": "655 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 73,
+    "quantity": 5,
+    "size": "#10/0",
+    "price": "725 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 75,
+    "quantity": 5,
+    "size": "#11/0",
+    "price": "790 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 77,
+    "quantity": 5,
+    "size": "#12/0",
+    "price": "860 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 78,
+    "quantity": 5,
+    "size": "#13/0",
+    "price": "920 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  },
+  {
+    "level": 80,
+    "quantity": 5,
+    "size": "#14/0",
+    "price": "995 CC",
+    "brand": "MagFin",
+    "hooktype": "offset",
+    "category": "lurebait",
+    "type": "hook"
+  }
+]
