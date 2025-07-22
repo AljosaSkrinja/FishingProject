@@ -4,12 +4,19 @@ from data_manager import DataManager
 from UI.display_manager import DisplayManager
 from UI.view_manager import ViewManager
 from UI.main_ui_orchestrator import MainUIOrchestrator
+import json
 
+
+def parse_json(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
 
 def main():
     dpg.create_context()
     dpg.create_viewport(width=WINDOW_WIDTH, height=WINDOW_HEIGHT, title=WINDOW_TITLE)
     dpg.setup_dearpygui()
+    
+
     
     data_manager = DataManager()
     display_manager = DisplayManager(data_manager)
@@ -17,6 +24,7 @@ def main():
     
     # Setup the UI components
     ui_orchestrator = MainUIOrchestrator(data_manager, display_manager, view_manager)
+    ui_orchestrator.setup_ui()
         
     # Skip fish and lake data - only show rods
     view_manager.show_rods()
