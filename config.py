@@ -54,6 +54,12 @@ SECONDARY_ROD_FIELDS = ['rodtype', 'brand', 'length']
 PRIMARY_REEL_FIELDS = ['name', 'price', 'level', 'recovery', 'maxDrag']
 SECONDARY_REEL_FIELDS = ['reeltype', 'brand']
 
+# Fallback field definitions (used when data_manager is not available)
+FALLBACK_PRIMARY_FIELDS = ['name', 'price', 'level']
+FALLBACK_SECONDARY_FIELDS = ['rodtype', 'brand']
+FALLBACK_PRIMARY_REEL_FIELDS = ['name', 'price', 'level']
+FALLBACK_SECONDARY_REEL_FIELDS = ['reeltype', 'brand']
+
 
 # UI text constants
 MAIN_WINDOW_LABEL = "Main Window"

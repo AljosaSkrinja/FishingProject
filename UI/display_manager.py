@@ -85,4 +85,19 @@ class DisplayManager:
     def refresh_current_view(self):
         """Refresh the current view by clearing and redisplaying data"""
         dpg.delete_item(UI_TAGS['rods_group'], children_only=True)
-        self.display_rods_data() 
+        self.display_rods_data()
+    
+    def refresh_current_view_responsive(self):
+        """Refresh the current view with responsive layout recalculation"""
+        # Determine which view is currently active
+        rods_visible = dpg.is_item_visible(UI_TAGS['rods_group'])
+        reels_visible = dpg.is_item_visible(UI_TAGS['reels_group'])
+        
+        if rods_visible:
+            # Clear and redisplay rods with responsive layout
+            dpg.delete_item(UI_TAGS['rods_group'], children_only=True)
+            self.display_rods_data()
+        elif reels_visible:
+            # Clear and redisplay reels with responsive layout
+            dpg.delete_item(UI_TAGS['reels_group'], children_only=True)
+            self.display_reels_data() 

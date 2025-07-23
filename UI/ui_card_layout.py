@@ -26,17 +26,24 @@ class UICardLayout:
         if not data:
             self._show_no_data_message(parent_group)
             return
+        
+        # Always calculate fresh layout parameters to ensure responsiveness
         available_width, cards_per_row = self.calculate_layout_parameters()
         rows = self.group_data_into_rows(data, cards_per_row)
+        
         for row in rows:
             UIComponents.create_card_row(row, parent_group, available_width, self.data_manager)
     
     def calculate_layout_parameters(self):
         """Calculate responsive layout parameters based on viewport size"""
         viewport_width = dpg.get_viewport_width()
-        available_width = viewport_width - WINDOW_PADDING
+        available_width = viewport_width - (WINDOW_PADDING * 2)  # Account for left and right padding
         cards_per_row = max(1, int(available_width / (CARD_WIDTH + CARD_ROW_SPACING)))
         return available_width, cards_per_row
+    
+    def recalculate_layout(self):
+        """Force recalculation of layout parameters and return new values"""
+        return self.calculate_layout_parameters()
     
     def group_data_into_rows(self, data, cards_per_row):
         """Group data items into rows for grid layout display"""
